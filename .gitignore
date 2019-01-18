@@ -1,0 +1,5 @@
+# OCOTBERCMS | exclude everything by default, and whitelist the safe stuff
+*
+!.gitignore
+!/plugins
+!/themes
