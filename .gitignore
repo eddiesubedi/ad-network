@@ -7,5 +7,4 @@ vendor/
 .htaccess
 index.php
 artisan
-plugins/october/demo*
-themes/demo*
+plugins/rainlab/builder
