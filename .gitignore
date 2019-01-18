@@ -1,5 +1,9 @@
-# OCOTBERCMS | exclude everything by default, and whitelist the safe stuff
-*
-!.gitignore
-!/plugins
-!/themes
+# OCOTBERCMS
+bootstrap/
+modules/
+storage/
+config/
+vendor/
+.htaccess
+index.php
+artisan
