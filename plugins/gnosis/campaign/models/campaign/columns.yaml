@@ -1,0 +1,6 @@
+columns:
+    campaign_name:
+        label: 'Campaign Name'
+        type: text
+        searchable: true
+        sortable: true

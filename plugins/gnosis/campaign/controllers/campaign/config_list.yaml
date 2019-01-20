@@ -1,0 +1,12 @@
+list: $/gnosis/campaign/models/campaign/columns.yaml
+modelClass: Gnosis\Campaign\Models\Campaign
+title: Campaign
+noRecordsMessage: 'backend::lang.list.no_records'
+showSetup: true
+showCheckboxes: true
+recordsPerPage: 20
+toolbar:
+    buttons: list_toolbar
+    search:
+        prompt: 'backend::lang.list.search_prompt'
+recordUrl: 'gnosis/campaign/campaign/update/:id'

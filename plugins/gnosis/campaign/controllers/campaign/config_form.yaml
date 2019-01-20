@@ -1,0 +1,10 @@
+name: Campaign
+form: $/gnosis/campaign/models/campaign/fields.yaml
+modelClass: Gnosis\Campaign\Models\Campaign
+defaultRedirect: gnosis/campaign/campaign
+create:
+    redirect: 'gnosis/campaign/campaign/update/:id'
+    redirectClose: gnosis/campaign/campaign
+update:
+    redirect: gnosis/campaign/campaign
+    redirectClose: gnosis/campaign/campaign
