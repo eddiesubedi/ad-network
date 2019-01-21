@@ -3,7 +3,14 @@ url = "/amazon"
 is_hidden = 0
 ==
 <?php
-function test(){}
+use gnosis\campaign\models\campaign;
+function onStart(){
+    $this['cam'] = campaign::get();
+}
+
+function onCalculate() {
+    return "Apple";    
+}
 ?>
 ==
 <!DOCTYPE html>
@@ -14,10 +21,9 @@ function test(){}
   <meta name=viewport content="width=device-width,initial-scale=1">
   <meta http-equiv=X-UA-Compatible content="ie=edge">
   <title>Amazon</title>
-<link href=/themes/gnosis/assets/../assets/css/amazon.9e382944.css rel=preload as=style><link href=/themes/gnosis/assets/../assets/js/amazon.63552ae2.js rel=preload as=script><link href=/themes/gnosis/assets/../assets/js/chunk-vendors.75f8daa2.js rel=preload as=script><link href=/themes/gnosis/assets/../assets/css/amazon.9e382944.css rel=stylesheet></head>
-
 <body>
   <div id=app></div>
-<script src=/themes/gnosis/assets/../assets/js/chunk-vendors.75f8daa2.js></script><script src=/themes/gnosis/assets/../assets/js/amazon.63552ae2.js></script></body>
-
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.js"></script>
+   {% framework %}
+  <script src="http://localhost:8081/index.js"></script>
 </html>

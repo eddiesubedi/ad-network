@@ -13,6 +13,13 @@ export default {
   name: "home",
   components: {
     HelloWorld
+  },
+  mounted() {
+    $.request("onCalculate", {
+      success: function(data) {
+        console.log(data);
+      }
+    });
   }
 };
 </script>
