@@ -3,6 +3,3 @@
 1.0.2:
     - 'Created table gnosis_campaign_'
     - builder_table_create_gnosis_campaign_.php
-1.0.3:
-    - 'Updated table gnosis_campaign_'
-    - builder_table_update_gnosis_campaign_.php

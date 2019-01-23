@@ -1,5 +1,0 @@
-fields:
-    campaign_name:
-        label: 'Campaign Name'
-        span: auto
-        type: text

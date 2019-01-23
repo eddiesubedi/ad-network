@@ -10,8 +10,8 @@ class BuilderTableCreateGnosisCampaign extends Migration
         Schema::create('gnosis_campaign_', function($table)
         {
             $table->engine = 'InnoDB';
-            $table->increments('campaign_id')->unsigned();
-            $table->string('campaign_name');
+            $table->increments('id')->unsigned();
+            $table->string('title');
             $table->timestamp('created_at')->nullable();
             $table->timestamp('updated_at')->nullable();
             $table->timestamp('deleted_at')->nullable();

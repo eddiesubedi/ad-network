@@ -3,9 +3,17 @@ url = "/amazon"
 is_hidden = 0
 ==
 <?php
-function test(){}
+use gnosis\campaign\models\campaign;
+function onStart(){
+    $this['cam'] = campaign::get();
+}
+
+function onCalculate() {
+    return $this->controller->getRouter()->getParameters();    
+}
 ?>
 ==
+{##}
 <!DOCTYPE html>
 <html lang="en">
 
